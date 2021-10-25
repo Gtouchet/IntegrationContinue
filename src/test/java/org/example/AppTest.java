@@ -1,20 +1,19 @@
 package org.example;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+import static org.junit.Assert.*;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue()
+    public void add_2Plus2()
     {
-        assertTrue( true );
+        assertEquals(4, Calculator.add(2, 2));
+    }
+
+    @Test
+    public void add_3Plus3()
+    {
+        assertNotEquals(4, Calculator.add(3, 3));
     }
 }
